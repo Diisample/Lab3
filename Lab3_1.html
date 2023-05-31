@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Нахождение максимума двух чисел</title>
+</head>
+
+<body>
+    <h1>Нахождение максимума 2-х чисел</h1>
+    <label for="a" > Первое число:</label>
+    <input type=" number" id ="a">
+    <br>
+    <label for="b" > Первое число:</label>
+    <input type=" number" id ="b">
+    <br>
+    <button onclick="findMax()"> Найти максимум </button>
+    <p id="result"></p>
+    <script>
+            function findMax() {
+                var a=document.getElementById('a').value;
+                var b=document.getElementById('b').value;
+
+                var maxNumber = Math.max(num1,num2);
+                document.getElementById('result').textContent="Максимум: " + maxNumber;
+
+            }
+    </script>
+</body>
+</html>
